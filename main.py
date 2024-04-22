@@ -29,7 +29,7 @@ def fruit_market():
             buy_more = False
 
     # Print receipt
-    print(f"\nOrder for {user_name}")
+    print(f"\nReceipt for {user_name}")
     subtotal = sum(fruit_inventory[key] * fruit_prices[key][1] for key in fruit_inventory)
     tax = subtotal * 0.05
     total = subtotal + tax
